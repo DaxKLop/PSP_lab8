@@ -1,6 +1,6 @@
 
-import by.herman.controller.Card;
-import by.herman.controller.User;
+import by.hvalinskii.controller.Card;
+import by.hvalinskii.controller.User;
 
 import java.sql.*;
 import java.util.ArrayList;

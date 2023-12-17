@@ -1,6 +1,6 @@
 
 <%@ page language="java" contentType="text/html; charset=utf-8"
-import="by.herman.controller.Card"
+import="by.hvalinskii.controller.Card"
  import="java.util.ArrayList"
   pageEncoding="utf-8"%>
 

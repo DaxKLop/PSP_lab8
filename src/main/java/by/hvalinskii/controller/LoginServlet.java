@@ -1,5 +1,4 @@
-package by.herman.controller;
-import java.sql.*;
+package by.hvalinskii.controller;
 import java.util.ArrayList;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;

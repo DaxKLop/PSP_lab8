@@ -1,4 +1,4 @@
-package by.herman.controller;
+package by.hvalinskii.controller;
 
 import java.sql.*;
 import java.util.ArrayList;

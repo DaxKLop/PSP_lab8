@@ -1,4 +1,4 @@
-package by.herman.controller;
+package by.hvalinskii.controller;
 
 public class Card {
     private int card_id;
