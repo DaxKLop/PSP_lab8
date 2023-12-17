@@ -99,8 +99,8 @@ import="by.herman.controller.Card"
 <div class="card-info" style="width:750px;height:230px;margin-top:68px">
     <% Card card = (Card)request.getAttribute("card"); %>
     <% if(card != null ){ %>
-            <h5>First name: <%= card.getFirstname() %></h5>
-            <h5>Last name: <%= card.getLastname() %></h5>
+            <h5>First name: <%= card.getFirst_name() %></h5>
+            <h5>Last name: <%= card.getLast_name() %></h5>
             <h5>Born date: <%= card.getBorn_date() %></h5>
             <h5>Height: <%= card.getHeight() %></h5>
             <h5>Weight: <%= card.getWeight() %></h5>

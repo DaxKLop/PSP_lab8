@@ -22,11 +22,11 @@ public class LoginServlet extends HttpServlet {
 
         for (User user : users) {
             if (user.getLogin().equals(login) && user.getPassword().equals(password) && user.getRole().equals("user")) {
-                resp.sendRedirect("/lab8/userViewCard");
+                resp.sendRedirect("/lab_8/userViewCard");
                 return;
             }
             else if(user.getLogin().equals(login) && user.getPassword().equals(password) && user.getRole().equals("admin")) {
-                resp.sendRedirect("/lab8/addCard");
+                resp.sendRedirect("/lab_8/addCard");
                 return;
             }
         }

@@ -7,7 +7,7 @@ public class JDBC {
 
     public static Connection connection = null;
 
-    public static Card findCardFromDB( String firstname, String lastname) {
+    public static Card findCardFromDB( String first_name, String last_name) {
         Card Card = new Card();
 
         try {
@@ -19,10 +19,10 @@ public class JDBC {
             ResultSet resultSet = statement.executeQuery(exampleQuery1);
 
             while (resultSet.next()) {
-                if(firstname.equals(resultSet.getString("firstname")) && lastname.equals(resultSet.getString("lastname"))) {
+                if(first_name.equals(resultSet.getString("first_name")) && last_name.equals(resultSet.getString("last_name"))) {
                     Card.setCard_id(resultSet.getInt("card_id"));
-                    Card.setFirstname(resultSet.getString("firstname"));
-                    Card.setLastname(resultSet.getString("lastname"));
+                    Card.setFirst_name(resultSet.getString("first_name"));
+                    Card.setLast_name(resultSet.getString("last_name"));
                     Card.setBorn_date(resultSet.getString("born_date"));
                     Card.setHeight(resultSet.getString("height"));
                     Card.setWeight(resultSet.getString("weight"));
@@ -51,8 +51,8 @@ public class JDBC {
             while (resultSet.next()) {
                 Card card = new Card();
                 card.setCard_id(resultSet.getInt("card_id"));
-                card.setFirstname(resultSet.getString("firstname"));
-                card.setLastname(resultSet.getString("lastname"));
+                card.setFirst_name(resultSet.getString("first_name"));
+                card.setLast_name(resultSet.getString("last_name"));
                 card.setBorn_date(resultSet.getString("born_date"));
                 card.setHeight(resultSet.getString("height"));
                 card.setWeight(resultSet.getString("weight"));
@@ -87,7 +87,7 @@ public class JDBC {
             e.printStackTrace();
             throw new SQLException();
         }
-        connection = DriverManager.getConnection("jdbc:mysql://localhost/lab8", "root", "481987237");
+        connection = DriverManager.getConnection("jdbc:mysql://localhost/hospital", "root", "145263");
         if (connection == null) {
             throw new SQLException();
         } else {

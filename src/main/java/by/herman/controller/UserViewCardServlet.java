@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class UserViewCardServlet extends HttpServlet {
 
     private String firstName = "firstName";
-    private String lastName = "firstName";
+    private String lastName = "lastName";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -30,7 +30,7 @@ public class UserViewCardServlet extends HttpServlet {
          firstName = req.getParameter("firstName");
          lastName = req.getParameter("lastName");
 
-        resp.sendRedirect("/lab8/userViewCard");
+        resp.sendRedirect("/lab_8/userViewCard");
     }
 
 }

@@ -34,7 +34,7 @@ public class RegServlet extends HttpServlet {
     }
 
     public void insertUser(int userId, String login, String password, String role) {
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/lab8", "root", "481987237");
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/hospital", "root", "145263");
              PreparedStatement statement = connection.prepareStatement(
                      "INSERT INTO users (user_id, login, password, role) VALUES (?, ?, ?, ?)")) {
 
